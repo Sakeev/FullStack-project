@@ -4,6 +4,9 @@ import Activation from "../components/auth/Activation";
 import Login from "../components/auth/Login";
 import Register from "../components/auth/Register";
 import Home from "../components/Home";
+import AddProduct from "../components/products/AddProduct";
+import EditProduct from "../components/products/EditProduct";
+import ProductList from "../components/products/ProductList";
 
 const MainRoutes = () => {
   return (
@@ -12,6 +15,9 @@ const MainRoutes = () => {
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
       <Route path="/activate" element={<Activation />} />
+      <Route path="/admin" element={<AddProduct />} />
+      <Route path="/edit/:slug" element={<EditProduct />} />
+      <Route path="/products" element={<ProductList />} />
     </Routes>
   );
 };
